@@ -6,9 +6,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    //1. Fix Value
-    //2. match_parent
-    //3. wrap_content
 
     <Button
         android:layout_width="300dp"
