@@ -53,7 +53,7 @@
         android:layout_height="80dp"
         android:background="@color/purple_200"
         android:gravity="bottom|end"
-        android:text="BL"
+        android:text="BR"
         android:textColor="@color/white"
         android:textSize="14dp" />
 
