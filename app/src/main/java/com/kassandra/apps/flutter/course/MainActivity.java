@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.demo_login_screen_with_linearlayout);
+        setContentView(R.layout.activity_main);
 
-        /*btnGetResult = findViewById(R.id.btnGetResult);
+        btnGetResult = findViewById(R.id.btnGetResult);
         tvResult = findViewById(R.id.tvResult);
         etUserName = findViewById(R.id.etUserName);
 
@@ -31,6 +31,5 @@ public class MainActivity extends AppCompatActivity {
                 tvResult.setText(userNameStr);
             }
         });
-*/
     }
 }
