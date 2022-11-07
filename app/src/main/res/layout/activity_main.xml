@@ -16,6 +16,12 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btnMoveToSecondActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move to Second Activity" />
+
+        <Button
             android:id="@+id/btnGetResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,8 +57,10 @@
             android:src="@drawable/download" />
 
         <CheckBox
+            android:id="@+id/cbFirstCourse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
             android:checked="true"
             android:text="1st Course" />
 
@@ -81,16 +89,21 @@
             <RadioButton
                 android:id="@+id/rbFeMale"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="FeMale" />
 
             <RadioButton
                 android:id="@+id/rbOther"
                 android:layout_width="0dp"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:text="Other" />
         </RadioGroup>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerData" />
     </LinearLayout>
 </ScrollView>
