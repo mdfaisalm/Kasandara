@@ -15,6 +15,17 @@
         android:background="@color/dummyColor"
         android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/etTableNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter your table no"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:textColorHint="#B8B4B4"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/btnMoveToSecondActivity"
             android:layout_width="match_parent"

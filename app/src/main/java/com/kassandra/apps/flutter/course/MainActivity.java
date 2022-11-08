@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnGetResult, btnMoveToSecondActivity;
     TextView tvResult;
-    EditText etUserName;
+    EditText etUserName, etTableNumber;
     CheckBox cbFirstCourse;
 
     @Override
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         tvResult = findViewById(R.id.tvResult);
         etUserName = findViewById(R.id.etUserName);
         btnMoveToSecondActivity = findViewById(R.id.btnMoveToSecondActivity);
+        etTableNumber = findViewById(R.id.etTableNumber);
         cbFirstCourse = findViewById(R.id.cbFirstCourse);
 
         btnGetResult.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, LoopsExampleActivity.class);
                 movingTOOtherActivityIntent.putExtra("editTextData", etUserName.getText().toString());
+                String tableNoStr = etTableNumber.getText().toString();
+                int tableNo = Integer.parseInt(tableNoStr);
+                movingTOOtherActivityIntent.putExtra("tableNo", tableNo);
                 movingTOOtherActivityIntent.putExtra("valueOfFirstCheckBox", cbFirstCourse.isChecked());
                 startActivity(movingTOOtherActivityIntent);
             }

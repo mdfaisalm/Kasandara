@@ -18,7 +18,28 @@ public class LoopsExampleActivity extends AppCompatActivity {
 
         String receivedData = getIntent().getExtras().getString("editTextData");
         boolean booleanValue = getIntent().getExtras().getBoolean("valueOfFirstCheckBox");
+        int tableNumber = getIntent().getExtras().getInt("tableNo");
 
-        tvData.setText(receivedData + "\n" + booleanValue);
+        //3x1=3
+        //3x2=6
+        //3x3=9
+/*
+        tvData.setText(tableNumber + "x1=" + tableNumber * 1 + "\n" +
+                tableNumber + "x2=" + tableNumber * 2 + "\n" +
+                tableNumber + "x3=" + tableNumber * 3 + "\n" +
+                tableNumber + "x4=" + tableNumber * 4 + "\n" +
+                tableNumber + "x5=" + tableNumber * 5 + "\n" +
+                tableNumber + "x6=" + tableNumber * 6 + "\n" +
+                tableNumber + "x7=" + tableNumber * 7 + "\n" +
+                tableNumber + "x8=" + tableNumber * 8 + "\n" +
+                tableNumber + "x9=" + tableNumber * 9 + "\n" +
+                tableNumber + "x10=" + tableNumber * 10);
+*/
+
+        for (int i = 1; i < 1001; i++) {
+            String previousData = tvData.getText().toString();
+            tvData.setText(previousData + tableNumber + "x" + i + "=" + tableNumber * i + "\n");
+        }
+
     }
 }
