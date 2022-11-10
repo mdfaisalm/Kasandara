@@ -20,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Please enter your table no"
-            android:textColor="@color/black"
             android:inputType="number"
+            android:textColor="@color/black"
             android:textColorHint="#B8B4B4"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -31,6 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Move to Second Activity" />
+
+        <Button
+            android:id="@+id/btnMoveToConditionsActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToConditionActivity"
+            android:text="Move to Conditions Activity" />
 
         <Button
             android:id="@+id/btnGetResult"

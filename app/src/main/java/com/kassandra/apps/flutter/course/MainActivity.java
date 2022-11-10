@@ -51,4 +51,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void moveToConditionActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, ConditionsExampleActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
 }

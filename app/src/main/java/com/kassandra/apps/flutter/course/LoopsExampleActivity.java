@@ -36,9 +36,18 @@ public class LoopsExampleActivity extends AppCompatActivity {
                 tableNumber + "x10=" + tableNumber * 10);
 */
 
-        for (int i = 1; i < 1001; i++) {
+/*
+        for (int i = 1; i < 10; i++) {
             String previousData = tvData.getText().toString();
             tvData.setText(previousData + tableNumber + "x" + i + "=" + tableNumber * i + "\n");
+        }
+*/
+
+        int i = 10;
+        while (i > 0) {
+            String previousData = tvData.getText().toString();
+            tvData.setText(previousData + tableNumber + "x" + i + "=" + tableNumber * i + "\n");
+            i--;
         }
 
     }
