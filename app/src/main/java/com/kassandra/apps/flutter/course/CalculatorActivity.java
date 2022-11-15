@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.kassandra.apps.flutter.newDummy.CalculatorHelper;
+
 public class CalculatorActivity extends AppCompatActivity {
 
     EditText etInput;
@@ -57,12 +59,12 @@ public class CalculatorActivity extends AppCompatActivity {
     }
 
     public void getResult(View view) {
-        String secondNumberStr = etInput.getText().toString();
         if (firstNumber == 0) {
             Toast.makeText(CalculatorActivity.this, "Please enter first number",
                     Toast.LENGTH_SHORT).show();
             return;
         }
+        String secondNumberStr = etInput.getText().toString();
         if (secondNumberStr.isEmpty()) {
             Toast.makeText(CalculatorActivity.this, "Please enter second number",
                     Toast.LENGTH_SHORT).show();
