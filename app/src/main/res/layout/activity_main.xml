@@ -38,6 +38,12 @@
             android:layout_height="wrap_content"
             android:onClick="moveToConditionActivity"
             android:text="Move to Conditions Activity" />
+        <Button
+            android:id="@+id/btnMoveToCalculatorActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToCalculatorActivity"
+            android:text="Move to Calculator Activity" />
 
         <Button
             android:id="@+id/btnGetResult"

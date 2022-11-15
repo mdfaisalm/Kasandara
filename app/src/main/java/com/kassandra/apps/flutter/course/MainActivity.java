@@ -56,4 +56,9 @@ public class MainActivity extends AppCompatActivity {
         Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, ConditionsExampleActivity.class);
         startActivity(movingTOOtherActivityIntent);
     }
+
+    public void moveToCalculatorActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, CalculatorActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
 }
