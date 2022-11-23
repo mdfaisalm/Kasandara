@@ -46,6 +46,13 @@
             android:onClick="moveToCalculatorActivity"
             android:text="Move to Calculator Activity" />
 
+        <Button
+            android:id="@+id/btnMoveToListViewExampleActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToListViewExampleActivity"
+            android:text="Move to ListView Example Activity" />
+
         <TextView
             android:id="@+id/tvEmail"
             android:layout_width="wrap_content"

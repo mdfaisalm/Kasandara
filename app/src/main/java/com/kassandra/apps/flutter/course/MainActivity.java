@@ -86,4 +86,9 @@ public class MainActivity extends AppCompatActivity {
         finish();
         startActivity(new Intent(MainActivity.this, LoginActivity.class));
     }
+
+    public void moveToListViewExampleActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, ListViewExampleActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
 }
