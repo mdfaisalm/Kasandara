@@ -6,10 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".ListViewExampleActivity">
 
-    <TextView
-        android:id="@+id/tvStudentNames"
+    <Button
+        android:id="@+id/btnAddItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:onClick="addItem"
+        android:text="Add Item to ListView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lvStudentsNames"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="#EC16EC"
+        android:dividerHeight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddItem" />
 </androidx.constraintlayout.widget.ConstraintLayout>
