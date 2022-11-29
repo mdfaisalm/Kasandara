@@ -20,7 +20,7 @@ public class ListViewExampleActivity extends AppCompatActivity {
     String studentName = "abc";
     String secondStudentName = "xyz";
 
-    String[] studentNamesArray = new String[]{"abc", "xyz", "studentName3", "studentName4"};
+    String[] studentNamesArray;
     int[] studentRollNosArray = new int[]{1, 2, 3, 4};
 
     ArrayList<String> studentNamesArrayList = new ArrayList<>();
@@ -39,14 +39,21 @@ public class ListViewExampleActivity extends AppCompatActivity {
 
         studentNamesArray = new String[]{"abc", "xyz", "studentName3"};
         studentNamesArray = new String[]{"abc", "xyz", "studentName4", "studentName5"};
+        studentNamesArray = new String[]{"abc", "xyz", "studentName3", "studentName4"};
 
-        studentNamesArrayList.add("abc");//0>removed
-        studentNamesArrayList.add("xyz");//1>0>1>2>removed
-        studentNamesArrayList.remove("abc");//0?removed
-        studentNamesArrayList.add(0, "aaaa");//0
-        studentNamesArrayList.add("ccc");//2>3>2
-        studentNamesArrayList.add(1, "bbb");//1
-        studentNamesArrayList.remove(2);
+        studentNamesArray[0] = "new Value";
+
+        studentNamesArrayList.add("abc");//0
+        studentNamesArrayList.add("xyz");//1
+        studentNamesArrayList.add(2,"3rd value");
+
+        //2 arrays, 1 for roll numbers and second for names
+        //structure of all display should be like below
+        //1 Name
+        //2 Name
+        //3 Name
+        //using a for loop
+
 
         studentImagesArrayList.add(R.drawable.bg_login_et);
         studentImagesArrayList.add(R.drawable.download);

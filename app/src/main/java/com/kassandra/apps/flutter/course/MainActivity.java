@@ -91,4 +91,9 @@ public class MainActivity extends AppCompatActivity {
         Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, ListViewExampleActivity.class);
         startActivity(movingTOOtherActivityIntent);
     }
+
+    public void recyclerViewExampleActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, RecyclerViewExampleActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
 }

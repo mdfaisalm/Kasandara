@@ -52,6 +52,12 @@
             android:layout_height="wrap_content"
             android:onClick="moveToListViewExampleActivity"
             android:text="Move to ListView Example Activity" />
+        <Button
+            android:id="@+id/btnMoveToRecyclerViewExampleActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="recyclerViewExampleActivity"
+            android:text="Move to RecyclerView Example Activity" />
 
         <TextView
             android:id="@+id/tvEmail"
