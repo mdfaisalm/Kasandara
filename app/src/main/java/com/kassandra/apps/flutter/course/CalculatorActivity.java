@@ -76,7 +76,7 @@ public class CalculatorActivity extends AppCompatActivity {
         CalculatorHelper calculatorHelper = new CalculatorHelper();
         switch (operation) {
             case "add":
-                result = calculatorHelper.calculateAddition(firstNumber, secondNumber);
+                result = calculatorHelper.calculateAddition(firstNumber, secondNumber,3);
                 break;
             case "sub":
                 result = calculatorHelper.calculateSubtraction(firstNumber, secondNumber);

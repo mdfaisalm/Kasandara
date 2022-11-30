@@ -106,4 +106,9 @@ public class MainActivity extends AppCompatActivity {
         Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, LoopTaskActivity.class);
         startActivity(movingTOOtherActivityIntent);
     }
+
+    public void moveToWebViewExampleActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, WebViewExampleActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
 }

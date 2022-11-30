@@ -70,6 +70,12 @@
             android:layout_height="wrap_content"
             android:onClick="moveToLoopTaskActivity"
             android:text="Move to LoopTaskActivity" />
+        <Button
+            android:id="@+id/btnMoveToWebViewExampleActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToWebViewExampleActivity"
+            android:text="Move to WebViewExampleActivity" />
 
         <TextView
             android:id="@+id/tvEmail"
