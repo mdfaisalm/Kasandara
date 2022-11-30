@@ -96,4 +96,14 @@ public class MainActivity extends AppCompatActivity {
         Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, RecyclerViewExampleActivity.class);
         startActivity(movingTOOtherActivityIntent);
     }
+
+    public void moveToGridViewActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, GridViewActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
+
+    public void moveToLoopTaskActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, LoopTaskActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
 }

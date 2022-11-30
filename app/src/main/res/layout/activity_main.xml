@@ -58,6 +58,18 @@
             android:layout_height="wrap_content"
             android:onClick="recyclerViewExampleActivity"
             android:text="Move to RecyclerView Example Activity" />
+        <Button
+            android:id="@+id/btnMoveToGridViewActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToGridViewActivity"
+            android:text="Move to GridViewActivity" />
+        <Button
+            android:id="@+id/btnMoveToLoopTaskActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToLoopTaskActivity"
+            android:text="Move to LoopTaskActivity" />
 
         <TextView
             android:id="@+id/tvEmail"

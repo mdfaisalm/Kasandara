@@ -16,6 +16,20 @@
         android:theme="@style/Theme.KassandraFlutter"
         tools:targetApi="31">
         <activity
+            android:name=".LoopTaskActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GridViewActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".RecyclerViewExampleActivity"
             android:exported="false">
             <meta-data
