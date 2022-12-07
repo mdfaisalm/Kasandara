@@ -111,4 +111,9 @@ public class MainActivity extends AppCompatActivity {
         Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, WebViewExampleActivity.class);
         startActivity(movingTOOtherActivityIntent);
     }
+
+    public void moveToFragmentsContainerActivity(View view) {
+        Intent movingTOOtherActivityIntent = new Intent(MainActivity.this, FragmentsContainerActivity.class);
+        startActivity(movingTOOtherActivityIntent);
+    }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -21,6 +22,8 @@ public class WebViewExampleActivity extends AppCompatActivity {
         wvMain = findViewById(R.id.wvMain);
         etUrl = findViewById(R.id.etUrl);
 
+        wvMain.getSettings().setJavaScriptEnabled(true);
+        wvMain.setWebViewClient(new WebViewClient());
 
         wvMain.loadUrl("https://www.google.com/");
     }
